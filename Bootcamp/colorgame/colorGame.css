@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0
+;
+}
+.square{
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.6%;
+
+}
+#container{
+    margin: 0 auto;
+    max-width: 700px;
+}
+h1, span{
+    color: white;
+    text-transform: uppercase;
+}
+.selected{
+    color: white;
+    background-color: lightskyblue;
+}
+h1{
+    text-align:center;
+    background-color: lightskyblue;
+    margin: 0;
+    padding: 2%;
+}
+.BTN{
+    background-color: white;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lightskyblue;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+#message{
+    display: inline-block;
+    width: 22%;
+    color: lightskyblue;
+}
+button:hover{
+    color: white;
+    background-color: lightskyblue;
+}
