@@ -1,3 +1,4 @@
+/*delete icon is somewhat buggy. needs fix*/
 #container{
 
     width: 800px;
@@ -65,7 +66,7 @@ input:focus{
 
 .fa-minus-circle{
     background-color: #FC466B;
-    height: 45px;
+    height: 40px;
     margin-right: 20px;
     width: 0;
     color: white;
@@ -75,7 +76,7 @@ input:focus{
     opacity: 0;
 
 }
-li:hover span{
+li:hover .fa-minus-circle{
     width: 45px;
     opacity:1.0 ;
 }
