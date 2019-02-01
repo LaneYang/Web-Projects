@@ -1,13 +1,15 @@
 //add strike and bg color when click.
-$("li").click(function () {
+//use on stead of click here because we will add some new list later.
+//only applies to "li" inside the "ul".
+$("ul").on("click","li",function () {
         // $(this).css("color","grey");
-        // $(this).css("text-decoration","line-through");
+        //   $(this).css("text-decoration","line-through");
         $(this).toggleClass("completed");
     }
 );
 //click X to delete a "todo list".
 
-$("span").click(function (event) {
+$("ul").on("click","span",function (event) {
     //remove the parent tag of this tag.
     $(this).parent().fadeOut(500, function () {
         $(this).remove();
@@ -18,11 +20,3 @@ $("span").click(function (event) {
 });
 //listen for user to press the key "enter".
 //update a todo list.
-$("input[type='text']").keypress(function (event) {
-    if(event.which===13){
-        var text = $(this).val();
-        $(this).val("");
-        $("ul").append("<li>"+text+"</li>");
-
-    }
-
