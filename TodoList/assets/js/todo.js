@@ -20,3 +20,15 @@ $("ul").on("click","span",function (event) {
 });
 //listen for user to press the key "enter".
 //update a todo list.
+$("input[type='text']").keypress(function (event) {
+    if (event.which === 13) {
+        var text = $(this).val();
+        $(this).val("");
+        $("ul").append("<li><span>X </span>"  + text + "</li>");
+
+    }
+});
+
+$("#toggle-form").click(function(){
+    $("input[type='text']").fadeToggle();
+});
