@@ -1,3 +1,5 @@
-const note = require('./note.js')
-
-console.log(note())
+const getNotes = require('./note.js')
+const validator = require('validator')
+console.log(validator.isEmail(
+    'qq@qq.com'
+))
